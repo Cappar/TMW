@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.ddns.cpsark.tmw.MainActivity"
+    tools:deviceIds="wear">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d3d3d3">
+
+        <Spinner
+            android:id="@+id/dropdown"
+            android:layout_width="200px"
+            android:layout_height="40px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dropdownborder"
+            >
+        </Spinner>
+
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/start"
+            android:background="#d3d3d3"
+            android:onClick="actionButton"
+            />
+
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Started / Stopped"/>
+
+    </FrameLayout>
+</android.support.wearable.view.BoxInsetLayout>
